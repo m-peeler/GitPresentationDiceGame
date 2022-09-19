@@ -8,7 +8,7 @@ import java.util.List;
  * Always returns either 2, 3, 4, 5, or 6, and returns 6 one-third of the time.
  *
  */
-public class DRigged implements Dice {
+public class DSixRigged implements Dice {
 	
 	/**
 	 * TODO: Crouse (As well as roll())
