@@ -24,7 +24,8 @@ public class DSix implements Dice {
 	 * TODO: Tate
 	 */
 	
-	public ArrayList<Integer> rollN(int n) {
+	@Override
+	public ArrayList<Integer> rollNDice(int n) {
 		ArrayList<Integer> vals = new ArrayList<Integer>();
 		for (int i = 0; i < n; i++) {
 			vals.add(roll());
