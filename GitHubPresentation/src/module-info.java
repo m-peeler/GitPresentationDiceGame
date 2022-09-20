@@ -1,2 +1,3 @@
 module GitHubPresentation {
+	requires rt;
 }
