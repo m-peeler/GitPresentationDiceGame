@@ -21,16 +21,16 @@ public class DSix implements Dice {
 	}
 
 	/**
-	 * TODO: Tate
+	 * Gets sum of rolls
 	 */
 	
 	@Override
 	public ArrayList<Integer> rollNDice(int n) {
 		ArrayList<Integer> vals = new ArrayList<Integer>();
 		for (int i = 0; i < n; i++) {
-			vals.add(roll());
+			total += roll();
 		}
-		return vals;
+		return total;
 	}
 
 	@Override
