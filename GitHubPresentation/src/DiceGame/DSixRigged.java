@@ -11,7 +11,7 @@ import java.util.List;
 public class DSixRigged implements Dice {
 	
 	/**
-	 * TODO: Crouse (As well as roll())
+	 * TODO: Crouse (As well as roll()) CROUSE WAS HERE
 	 */
 	private final static List<Integer> list = new ArayList<>(Arrays.asList(new Integer[] {2, 3, 4, 5, 6, 6}));
 	private static Random RANDOM = new RANDOM(100021332);
