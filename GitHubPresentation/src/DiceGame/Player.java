@@ -16,12 +16,13 @@ public class Player {
 	/**
 	 * TODO: Phillip
 	 */
-	public void rollDice() {
+	public List<Integer> rollDice() {
 		ArrayList<Integer> rolls = new ArrayList<Integer>();
 		
 		for (Dice die : dice) {
 			rolls.add(die.roll());
 		}
+		return rolls;
 	}
 
 }
