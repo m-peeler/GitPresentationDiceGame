@@ -1,6 +1,7 @@
 package DiceGame;
 
 import java.util.List;
+import java.util.ArrayList;
 
 /**
  * 
@@ -26,9 +27,9 @@ public class DSixRigged implements Dice {
 	 */
 	@Override
 	public List<Integer> rollNDice(int n) {
-		List<Integer> = new ArrayList<>();
+		List<Integer> rolls= new ArrayList<Integer>();
 		for (int i = 0; i < n; i++) {
-			add(roll());
+			rolls.add(roll());
 		}
 		return rolls;
 	}
