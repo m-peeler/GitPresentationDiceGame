@@ -31,12 +31,13 @@ public class DiceGame {
 		int twoSum = sum(playerTwo.rollDice());
 		
 		if (oneSum == twoSum) {
-			System.out.println(String.format("It's a tie! %1 to %2", oneSum, twoSum));
+			System.out.println(String.format("It's a tie! $d to $d", oneSum, twoSum));
 		} else if (oneSum > twoSum) {
-			System.out.println(String.format("Wow, player one! You really beat the odds with the score of %1 to %2", 
+			System.out.println(String.format("Wow, player one! You really beat the odds with the score of $d to $d", 
 					oneSum, twoSum));
 		} else {
-			System.out.println(String.format("Player one, you simply couldn't be my awsome power. The score is %1 to %2", oneSum, twoSum));
+			System.out.println(String.format("Player one, you simply couldn't beat my awesome power. The score is $d to $d", 
+					oneSum, twoSum));
 		}
 
 	}
