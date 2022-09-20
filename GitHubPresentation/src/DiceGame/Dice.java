@@ -2,6 +2,11 @@ package DiceGame;
 
 import java.util.List;
 
+/**
+ * Simple interface for a rollable dice.
+ * @author Michael Peeler
+ *
+ */
 public interface Dice {
 
 	public abstract int roll();

@@ -3,6 +3,11 @@ package DiceGame;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * Rolls a random number from 1 to 6.
+ * @author Michael Peeler
+ *
+ */
 public class DSix implements Dice {
 	
 	private static final Random RANDOM = new Random();

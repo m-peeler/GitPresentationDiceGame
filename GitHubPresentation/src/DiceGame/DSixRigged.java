@@ -4,8 +4,8 @@ import java.util.List;
 
 /**
  * 
- * @author Michael Peeler
  * Always returns either 2, 3, 4, 5, or 6, and returns 6 one-third of the time.
+ * @author Michael Peeler
  *
  */
 public class DSixRigged implements Dice {
@@ -30,7 +30,7 @@ public class DSixRigged implements Dice {
 		for (int i = 0; i < n; i++) {
 			.add(roll());
 		}
-		return;
+		return rolls;
 	}
 
 	@Override

@@ -6,6 +6,7 @@ import java.util.Queue;
 
 /**
  * 
+ * Rolls a random number from 1 to 4.
  * @author Michael Peeler
  *
  */

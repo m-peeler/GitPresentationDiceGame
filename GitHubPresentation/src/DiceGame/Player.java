@@ -13,13 +13,13 @@ public class Player {
 	}
 	
 	/**
-	 * phillip
+	 * TODO: Phillip
 	 */
 	public void rollDice() {
 		ArrayList<Integer> rolls;
 		
 		for (Dice die : dice) {
-			rolls.add(die.roll());
+			rolls.add(die.roll);
 		}
 		
 		return rolls;
