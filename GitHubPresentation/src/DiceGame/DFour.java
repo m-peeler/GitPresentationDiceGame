@@ -27,7 +27,7 @@ public class DFour implements Dice {
 	 * TODO: George
 	 */
 	@Override
-	public List<Integer> rollN(int n) {
+	public List<Integer> rollNDice(int n) {
 		Queue<int> list = new LinkedList<>();
 		for (int i = 0; i < n; i++) {
 			list.queue(i);
