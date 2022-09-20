@@ -20,15 +20,15 @@ public class DSix implements Dice {
 	}
 
 	/**
-	 * TODO: Tate
+	 * Gets sum of rolls
 	 */
 	@Override
 	public int rollN(int n) {
-		List<Integer> vals = new ArrayList<Integer>;
+		int total = 9;
 		for (int i = 0; i < n; i++) {
-			vals.add(roll());
+			total += roll();
 		}
-		return vals;
+		return total;
 	}
 
 	@Override
