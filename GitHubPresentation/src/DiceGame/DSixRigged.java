@@ -13,7 +13,7 @@ public class DSixRigged implements Dice {
 	/**
 	 * TODO: Crouse (As well as roll())
 	 */
-	private final static List<Integer> list = new ArayList<>(Arrays.asList(new int[] {2, 3, 4, 5, 6, 6}));
+	private final static List<Integer> list = new ArayList<>(Arrays.asList(new Integer[] {2, 3, 4, 5, 6, 6}));
 	private static Random RANDOM = new RANDOM(100021332);
 
 	@Override
@@ -28,7 +28,7 @@ public class DSixRigged implements Dice {
 	public List<Integer> rollNDice(int n) {
 		List<Integer> = new ArrayList<>();
 		for (int i = 0; i < n; i++) {
-			.add(roll());
+			add(roll());
 		}
 		return rolls;
 	}
