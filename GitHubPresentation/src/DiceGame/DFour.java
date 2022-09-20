@@ -27,11 +27,11 @@ public class DFour implements Dice {
 	}
 
 	/**
-	 * TODO: George
+	 * TODO: George 
 	 */
 	@Override
-	public List<Integer> rollNDice(int n) {
-		List <Integer> list = new LinkedList<>();
+	public LinkedList<Integer> rollNDice(int n) {
+		LinkedList <Integer> list = new LinkedList<>();
 		for (int i = 0; i < n; i++) {
 			list.add(i);
 		}
