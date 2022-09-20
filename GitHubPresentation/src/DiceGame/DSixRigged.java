@@ -21,21 +21,26 @@ public class DSixRigged implements Dice {
 		return list.get(RANDON.nextInt(list.size()));
 	}
 
+	/**
+	 * TODO: Mike
+	 */
 	@Override
-	public List<Integer> rollN(int n) {
-		List<Integer> 
+	public List<Integer> rollNDice(int n) {
+		List<Integer> = new ArrayList<>();
+		for (int i = 0; i < n; i++) {
+			.add(roll());
+		}
+		return;
 	}
 
 	@Override
 	public int numSides() {
-		// TODO Auto-generated method stub
-		return 0;
+		return list.size();
 	}
 
 	@Override
 	public List<Integer> sideValues() {
-		// TODO Auto-generated method stub
-		return null;
+		return list;
 	}
 
 }
