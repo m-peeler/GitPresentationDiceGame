@@ -19,7 +19,7 @@ public class DTwenty implements Dice {
 	
 	@Override
 	public int roll() {
-		return RANDOM.nextInt(MAXIMUM) + 1;
+		return RANDOM.nextInt(MAXIMUM);
 	}
 	
 	@Override
