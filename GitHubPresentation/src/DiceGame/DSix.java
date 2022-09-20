@@ -1,5 +1,6 @@
 package DiceGame;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -22,9 +23,9 @@ public class DSix implements Dice {
 	/**
 	 * TODO: Tate
 	 */
-	@Override
-	public int rollN(int n) {
-		List<Integer> vals = new ArrayList<Integer>;
+	
+	public ArrayList<Integer> rollN(int n) {
+		ArrayList<Integer> vals = new ArrayList<Integer>();
 		for (int i = 0; i < n; i++) {
 			vals.add(roll());
 		}
