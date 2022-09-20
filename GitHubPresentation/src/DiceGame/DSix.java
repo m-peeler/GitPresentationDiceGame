@@ -1,5 +1,6 @@
 package DiceGame;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -23,8 +24,8 @@ public class DSix implements Dice {
 	 * TODO: Tate
 	 */
 	@Override
-	public int rollN(int n) {
-		List<Integer> vals = new ArrayList<Integer>;
+	public List<Integer> rollNDice(int n) {
+		List<Integer> vals = new ArrayList<Integer>();
 		for (int i = 0; i < n; i++) {
 			vals.add(roll());
 		}
@@ -41,8 +42,8 @@ public class DSix implements Dice {
 	 */
 	@Override
 	public List<Integer> sideValues() {
-		List<Integer> vals = new List<>();
-		for (int i = 1; i < max + 1; i++) {
+		List<Integer> vals = new ArrayList<Integer>();
+		for (int i = 1; i < MAX + 1; i++) {
 			vals.add(i);
 		}
 		return vals;

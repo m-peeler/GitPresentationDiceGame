@@ -1,5 +1,6 @@
 package DiceGame;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -14,8 +15,8 @@ public class DTwenty implements Dice {
 	/**
 	 * TODO: Dewey
 	 */
-	private static final int MAXIMUM;
-	private static final Random RANDOM;
+	private static final int MAXIMUM = 20;
+	private static final Random RANDOM = new Random();
 	
 	@Override
 	public int roll() {
@@ -27,11 +28,11 @@ public class DTwenty implements Dice {
 	 */
 	@Override
 	public List<Integer> rollNDice(int n) {
-		List<Integer> rolls;
+		List<Integer> rolls = new ArrayList<Integer>();
 		for (int i = 0; i < n; i++) {
-			rolls;
+			rolls.add(roll());
 		}
-		return;
+		return rolls;
 	}
 	
 	@Override

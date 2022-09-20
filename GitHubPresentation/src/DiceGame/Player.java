@@ -15,11 +15,11 @@ public class Player {
 	/**
 	 * TODO: Phillip
 	 */
-	public void rollDice() {
-		ArrayList<Integer> rolls;
+	public List<Integer> rollDice() {
+		List<Integer> rolls = new ArrayList<Integer>();
 		
 		for (Dice die : dice) {
-			rolls.add(die.roll);
+			rolls.add(die.roll());
 		}
 		
 		return rolls;
