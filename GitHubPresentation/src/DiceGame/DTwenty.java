@@ -19,19 +19,16 @@ public class DTwenty implements Dice {
 	
 	@Override
 	public int roll() {
-		return RANDOM.nextInt(MAXIMUM) + 1;
+		return RANDOM.nextInt(MAXIMUM);
 	}
 	
-	/**
-	 * TODO: Jackson
-	 */
 	@Override
 	public List<Integer> rollNDice(int n) {
 		List<Integer> rolls;
 		for (int i = 0; i < n; i++) {
-			rolls;
+			rolls.add(this.roll());
 		}
-		return;
+		return rolls;
 	}
 	
 	@Override

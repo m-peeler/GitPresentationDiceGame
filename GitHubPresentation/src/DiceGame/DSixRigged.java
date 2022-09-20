@@ -1,6 +1,7 @@
 package DiceGame;
 
 import java.util.List;
+import java.util.ArrayList;
 
 /**
  * 
@@ -11,7 +12,7 @@ import java.util.List;
 public class DSixRigged implements Dice {
 	
 	/**
-	 * TODO: Crouse (As well as roll())
+	 * TODO: Crouse (As well as roll()) CROUSE WAS HERE
 	 */
 	private final static List<Integer> list = new ArayList<>(Arrays.asList(new Integer[] {2, 3, 4, 5, 6, 6}));
 	private static Random RANDOM = new RANDOM(100021332);
@@ -26,9 +27,9 @@ public class DSixRigged implements Dice {
 	 */
 	@Override
 	public List<Integer> rollNDice(int n) {
-		List<Integer> = new ArrayList<>();
+		List<Integer> rolls= new ArrayList<Integer>();
 		for (int i = 0; i < n; i++) {
-			add(roll());
+			rolls.add(roll());
 		}
 		return rolls;
 	}

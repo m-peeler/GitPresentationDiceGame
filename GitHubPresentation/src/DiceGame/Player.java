@@ -1,6 +1,7 @@
 package DiceGame;
 
 import java.util.ArrayList;
+
 import java.util.List;
 
 public class Player {
@@ -16,13 +17,11 @@ public class Player {
 	 * TODO: Phillip
 	 */
 	public void rollDice() {
-		ArrayList<Integer> rolls;
+		ArrayList<Integer> rolls = new ArrayList<Integer>();
 		
 		for (Dice die : dice) {
-			rolls.add(die.roll);
+			rolls.add(die.roll());
 		}
-		
-		return rolls;
 	}
 
 }

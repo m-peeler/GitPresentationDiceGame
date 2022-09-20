@@ -1,13 +1,15 @@
 package DiceGame;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+import java.util.Random;
 
 /**
  * 
  * Rolls a random number from 1 to 4.
- * @author Michael Peeler
+ * @author Michael Peeler :)
  *
  */
 public class DFour implements Dice {
@@ -29,9 +31,9 @@ public class DFour implements Dice {
 	 */
 	@Override
 	public List<Integer> rollNDice(int n) {
-		Queue<int> list = new LinkedList<>();
+		List <Integer> list = new LinkedList<>();
 		for (int i = 0; i < n; i++) {
-			list.queue(i);
+			list.add(i);
 		}
 		return list;
 	}
