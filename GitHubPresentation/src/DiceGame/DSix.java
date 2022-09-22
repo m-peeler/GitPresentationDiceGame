@@ -28,9 +28,9 @@ public class DSix implements Dice {
 	public ArrayList<Integer> rollNDice(int n) {
 		ArrayList<Integer> vals = new ArrayList<Integer>();
 		for (int i = 0; i < n; i++) {
-			total += roll();
+			vals.add(roll());
 		}
-		return total;
+		return vals;
 	}
 
 	@Override

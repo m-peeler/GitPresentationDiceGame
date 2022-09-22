@@ -41,8 +41,9 @@ public class DTwenty implements Dice {
 	public List<Integer> sideValues() {
 		List<Integer> vals = new ArrayList<>();
 		for (int i = 1; i < MAXIMUM + 1; i++) {
-			
+			vals.add(i);
 		}
+		return vals;
 	}
 	
 	
